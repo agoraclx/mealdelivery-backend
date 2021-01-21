@@ -1,2 +1,2 @@
-# mealdelivery-backend
+# Meal delivery backend
 meal delivery backend
