@@ -1,5 +1,9 @@
 # Meal delivery backend
 
+## clone:
+~~~
+git clone git@github.com:agoraclx/mealdelivery-backend.git
+~~~
 ## navigate to docker-compose file:
 ~~~
 sample "D:\wamp64\www\mealdelivery-backend\docker\docker-compose\docker-desktop" 
