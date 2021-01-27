@@ -23,10 +23,16 @@ class RestaurantResources extends JsonResource
             'distance'       => $this->distance,
             'balance'        => $this->balance,
             'business_hours' => $this->business_hours,
+            'bs_string'      => $this->stringToArray($this->business_hours),
             'menu_String'    => $this->menu,
             'menu'           => json_decode($this->menu),
             'total_dish'     => $this->total_dish,
             
         ];
+    }
+
+    public function stringToArray($str)
+    {
+        return explode(" | ", $str);
     }
 }
