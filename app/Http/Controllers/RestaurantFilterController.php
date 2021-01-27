@@ -20,29 +20,29 @@ class RestaurantFilterController extends QueryFilter
     // ==> move to main Controllers
 
     // List all restaurants that are open at a certain time
-    public function test($query)
-    {
-        return $this->builder->where('menu', "LIKE", '%'.$query.'%');
-    }
+    // public function test($query)
+    // {
+    //     return $this->builder->where('menu', "LIKE", '%'.$query.'%');
+    // }
 
     // List all restaurants that are open for x-z hours per day or week
     
 
     // List all restaurants that have x-z number of dishes within a price range
-    public function price($price)
-    {
-        return $this->builder
-            ->where([
-                ['menu', '<>', '%'.$price.'%'],
-            ]);
-    }
-    public function price2($price)
-    {
-        return $this->builder
-        ->where([
-            ['menu', '<>', '%'.$price.'%'],
-        ]);
-    }
+    // public function price($price)
+    // {
+    //     return $this->builder
+    //         ->where([
+    //             ['menu', '<>', '%'.$price.'%'],
+    //         ]);
+    // }
+    // public function price2($price)
+    // {
+    //     return $this->builder
+    //     ->where([
+    //         ['menu', '<>', '%'.$price.'%'],
+    //     ]);
+    // }
 
     /**
      * Search for restaurants or dishes by name, ranked by relevance to search term

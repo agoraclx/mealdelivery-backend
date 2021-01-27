@@ -17,14 +17,14 @@ class RestaurantResources extends JsonResource
     {
         return [
             'id'             => $this->id,
-            // 'name'           => $this->name,
-            // 'location'       => $this->location,
-            // 'distance'       => $this->distance,
-            // 'balance'        => $this->balance,
+            'name'           => $this->name,
+            'location'       => $this->location,
+            'distance'       => $this->distance,
+            'balance'        => $this->balance,
             'business_hours' => $this->business_hours,
-            'menu_String'           => $this->menu,
-            // 'menu'           => json_decode($this->menu),
-            // 'total_dish'     => $this->total_dish,
+            'menu_String'    => $this->menu,
+            'menu'           => json_decode($this->menu),
+            'total_dish'     => $this->total_dish,
             
         ];
     }
