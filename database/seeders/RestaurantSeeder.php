@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use App\Models\Restaurant;
+use App\Models\User;
+use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 
 class RestaurantSeeder extends Seeder
@@ -22,6 +23,7 @@ class RestaurantSeeder extends Seeder
             Restaurant::create([
                 'name'           => $obj['name'],
                 'location'       => $obj['location'],
+                'popularity'     => rand(1, 20),
                 'balance'        => $obj['balance'],
                 'business_hours' => $obj['business_hours'],
                 'menu'           => json_encode($obj['menu']),

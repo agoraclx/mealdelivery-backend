@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Http\Controllers\RestaurantFilterController;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Restaurant extends Model
@@ -29,6 +30,12 @@ class Restaurant extends Model
         'distance',
         'total_dish'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 
     public function scopeFilter($query, RestaurantFilterController $filter)
     {

@@ -17,6 +17,7 @@ class Restaurant extends Migration
             $table->id();
             $table->string('name');
             $table->text('location');
+            $table->integer('popularity')->nullable();
             $table->decimal('balance', $precision = 8, $scale = 2);
             $table->longText('business_hours')->nullable();
             $table->json('menu');

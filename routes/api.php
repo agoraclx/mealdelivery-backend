@@ -20,3 +20,4 @@ use App\Http\Controllers\Api\RestaurantController;
 // });
 
 Route::get('/restaurants', [RestaurantController::class, 'index']);
+Route::get('/users', [RestaurantController::class, 'user']);

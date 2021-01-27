@@ -11,6 +11,10 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
+    protected $casts = [
+        'purchases' => 'object'
+     ];
+
     /**
      * The attributes that are mass assignable.
      *
